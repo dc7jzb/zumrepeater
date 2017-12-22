@@ -1,0 +1,708 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:lm3940
+LIBS:rf7021se
+LIBS:smt32F103radio-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Mmdvm Home Repeater"
+Date "2017-12-22"
+Rev "0.9"
+Comp "Dr CADIC Philippe"
+Comment1 "pcadic@gmail.com"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L STM32F103Duino STM32F1
+U 1 1 5A3CE39F
+P 3165 4580
+F 0 "STM32F1" H 3815 4480 60  0000 C CNN
+F 1 "STM32F103Duino" V 3765 5730 60  0000 C CNN
+F 2 "EA:STM32F103" H 3165 4580 60  0001 C CNN
+F 3 "" H 3165 4580 60  0001 C CNN
+	1    3165 4580
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR1
+U 1 1 5A3CE4F9
+P 2885 4500
+F 0 "#PWR1" H 2885 4250 50  0001 C CNN
+F 1 "GND" H 2885 4350 50  0000 C CNN
+F 2 "" H 2885 4500 50  0000 C CNN
+F 3 "" H 2885 4500 50  0000 C CNN
+	1    2885 4500
+	1    0    0    -1  
+$EndComp
+Text GLabel 2770 4380 0    60   Input ~ 0
+GND
+Text GLabel 4665 2680 2    60   Input ~ 0
+GND
+Text GLabel 8460 1525 0    60   Input ~ 0
+GND
+$Comp
+L Led_Small D1
+U 1 1 5A3CE62B
+P 8915 1525
+F 0 "D1" H 8865 1650 50  0000 L CNN
+F 1 "Led_Blue" H 8740 1425 50  0000 L CNN
+F 2 "LEDs:LED_1206_HandSoldering" V 8915 1525 50  0001 C CNN
+F 3 "" V 8915 1525 50  0000 C CNN
+	1    8915 1525
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R5
+U 1 1 5A3CE758
+P 9480 1525
+F 0 "R5" V 9405 1465 50  0000 L CNN
+F 1 "1.5k" V 9555 1460 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9480 1525 50  0001 C CNN
+F 3 "" H 9480 1525 50  0000 C CNN
+	1    9480 1525
+	0    1    1    0   
+$EndComp
+Text GLabel 8460 1980 0    60   Input ~ 0
+GND
+$Comp
+L Led_Small D2
+U 1 1 5A3CED43
+P 8915 1980
+F 0 "D2" H 8865 2105 50  0000 L CNN
+F 1 "Led_Orange" H 8740 1880 50  0000 L CNN
+F 2 "LEDs:LED_1206_HandSoldering" V 8915 1980 50  0001 C CNN
+F 3 "" V 8915 1980 50  0000 C CNN
+	1    8915 1980
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R6
+U 1 1 5A3CED49
+P 9480 1980
+F 0 "R6" V 9405 1920 50  0000 L CNN
+F 1 "1.5k" V 9555 1915 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9480 1980 50  0001 C CNN
+F 3 "" H 9480 1980 50  0000 C CNN
+	1    9480 1980
+	0    1    1    0   
+$EndComp
+Text GLabel 8460 2445 0    60   Input ~ 0
+GND
+$Comp
+L Led_Small D3
+U 1 1 5A3CF331
+P 8915 2445
+F 0 "D3" H 8865 2570 50  0000 L CNN
+F 1 "Led_White" H 8740 2345 50  0000 L CNN
+F 2 "LEDs:LED_1206_HandSoldering" V 8915 2445 50  0001 C CNN
+F 3 "" V 8915 2445 50  0000 C CNN
+	1    8915 2445
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R7
+U 1 1 5A3CF337
+P 9480 2445
+F 0 "R7" V 9405 2385 50  0000 L CNN
+F 1 "1.5k" V 9555 2380 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9480 2445 50  0001 C CNN
+F 3 "" H 9480 2445 50  0000 C CNN
+	1    9480 2445
+	0    1    1    0   
+$EndComp
+Text GLabel 8460 2900 0    60   Input ~ 0
+GND
+$Comp
+L Led_Small D4
+U 1 1 5A3CF341
+P 8915 2900
+F 0 "D4" H 8865 3025 50  0000 L CNN
+F 1 "Led_Yellow" H 8740 2800 50  0000 L CNN
+F 2 "LEDs:LED_1206_HandSoldering" V 8915 2900 50  0001 C CNN
+F 3 "" V 8915 2900 50  0000 C CNN
+	1    8915 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R8
+U 1 1 5A3CF347
+P 9480 2900
+F 0 "R8" V 9405 2840 50  0000 L CNN
+F 1 "1.5k" V 9555 2835 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9480 2900 50  0001 C CNN
+F 3 "" H 9480 2900 50  0000 C CNN
+	1    9480 2900
+	0    1    1    0   
+$EndComp
+Text GLabel 8470 3580 0    60   Input ~ 0
+GND
+$Comp
+L Led_Small D5
+U 1 1 5A3CF72F
+P 8925 3580
+F 0 "D5" H 8875 3705 50  0000 L CNN
+F 1 "Led_Red" H 8750 3480 50  0000 L CNN
+F 2 "LEDs:LED_1206_HandSoldering" V 8925 3580 50  0001 C CNN
+F 3 "" V 8925 3580 50  0000 C CNN
+	1    8925 3580
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R9
+U 1 1 5A3CF735
+P 9490 3580
+F 0 "R9" V 9415 3520 50  0000 L CNN
+F 1 "1.5k" V 9565 3515 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9490 3580 50  0001 C CNN
+F 3 "" H 9490 3580 50  0000 C CNN
+	1    9490 3580
+	0    1    1    0   
+$EndComp
+Text GLabel 8470 4035 0    60   Input ~ 0
+GND
+$Comp
+L Led_Small D6
+U 1 1 5A3CF73F
+P 8925 4035
+F 0 "D6" H 8875 4160 50  0000 L CNN
+F 1 "Led_Green" H 8750 3935 50  0000 L CNN
+F 2 "LEDs:LED_1206_HandSoldering" V 8925 4035 50  0001 C CNN
+F 3 "" V 8925 4035 50  0000 C CNN
+	1    8925 4035
+	1    0    0    -1  
+$EndComp
+$Comp
+L R_Small R10
+U 1 1 5A3CF745
+P 9490 4035
+F 0 "R10" V 9415 3975 50  0000 L CNN
+F 1 "1.5k" V 9565 3970 50  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 9490 4035 50  0001 C CNN
+F 3 "" H 9490 4035 50  0000 C CNN
+	1    9490 4035
+	0    1    1    0   
+$EndComp
+Text GLabel 10030 1525 2    60   Input ~ 0
+DMRled
+Text GLabel 4645 4380 2    60   Input ~ 0
+DMRled
+Text GLabel 10030 1980 2    60   Input ~ 0
+YSFled
+Text GLabel 2925 3880 0    60   Input ~ 0
+YSFled
+Text GLabel 10030 2445 2    60   Input ~ 0
+DSTARled
+Text GLabel 4645 4500 2    60   Input ~ 0
+DSTARled
+Text GLabel 10030 2900 2    60   Input ~ 0
+P25led
+Text GLabel 2925 3760 0    60   Input ~ 0
+P25led
+Text GLabel 10040 3580 2    60   Input ~ 0
+PTTled
+Text GLabel 4645 4265 2    60   Input ~ 0
+PTTled
+Text GLabel 10040 4035 2    60   Input ~ 0
+COSled
+Text GLabel 4645 4145 2    60   Input ~ 0
+COSled
+Text Notes 9050 1060 0    60   ~ 12
+DISPLAY LEDS
+$Comp
+L LM3940 U1
+U 1 1 5A3D2FA3
+P 9725 5535
+F 0 "U1" H 9525 5735 40  0000 C CNN
+F 1 "LM3940" H 9725 5735 40  0000 L CNN
+F 2 "TO_SOT_Packages_THT:TO-220-3_Horizontal" H 9725 5635 30  0001 C CIN
+F 3 "" H 9725 5535 60  0000 C CNN
+	1    9725 5535
+	1    0    0    -1  
+$EndComp
+Text GLabel 4345 2780 2    60   Input ~ 0
+5Vstm
+Text GLabel 9120 5485 0    60   Input ~ 0
+5Vstm
+Text GLabel 9775 5880 2    60   Input ~ 0
+GND
+Text GLabel 10605 5485 2    60   Input ~ 0
++3.3Vs
+$Comp
+L CP_Small C1
+U 1 1 5A3D478A
+P 10220 5755
+F 0 "C1" H 10230 5825 50  0000 L CNN
+F 1 "47uF" H 10230 5675 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 10220 5755 50  0001 C CNN
+F 3 "" H 10220 5755 50  0000 C CNN
+	1    10220 5755
+	1    0    0    -1  
+$EndComp
+$Comp
+L C_Small C2
+U 1 1 5A3D48CA
+P 10465 5755
+F 0 "C2" H 10475 5825 50  0000 L CNN
+F 1 "100nF" H 10475 5675 50  0000 L CNN
+F 2 "Capacitors_SMD:C_1206_HandSoldering" H 10465 5755 50  0001 C CNN
+F 3 "" H 10465 5755 50  0000 C CNN
+	1    10465 5755
+	1    0    0    -1  
+$EndComp
+Text GLabel 10445 5995 2    60   Input ~ 0
+GND
+$Comp
+L RF7021SE P1
+U 1 1 5A3D62EC
+P 2265 6795
+F 0 "P1" H 2265 7195 50  0000 C CNN
+F 1 "RF7021SE" V 2265 6795 50  0000 C CNN
+F 2 "EA:RF7021se" H 2255 6365 50  0000 C CNN
+F 3 "" H 2265 5595 50  0000 C CNN
+	1    2265 6795
+	1    0    0    -1  
+$EndComp
+Text GLabel 1445 6495 0    60   Input ~ 0
++3.3Vs
+Text GLabel 2715 2780 0    60   Input ~ 0
+CE
+Text GLabel 1745 6595 0    60   Input ~ 0
+CE
+Text GLabel 4700 3180 2    60   Input ~ 0
+SDATA
+Text GLabel 1445 6695 0    60   Input ~ 0
+SDATA
+Text GLabel 4700 3380 2    60   Input ~ 0
+DATA
+Text GLabel 1405 6850 0    60   Input ~ 0
+DATA
+Text GLabel 4695 3580 2    60   Input ~ 0
+CLKOUT
+Text GLabel 1410 6995 0    60   Input ~ 0
+CLKOUT
+Text GLabel 1870 7095 0    60   Input ~ 0
+GND
+Text GLabel 4645 4630 2    60   Input ~ 0
+PAC
+Text GLabel 2780 6495 2    60   Input ~ 0
+PAC
+Text GLabel 4700 2980 2    60   Input ~ 0
+SLE
+Text GLabel 2560 6595 2    60   Input ~ 0
+SLE
+Text GLabel 4355 3080 2    60   Input ~ 0
+SREAD
+Text GLabel 2780 6695 2    60   Input ~ 0
+SREAD
+Text GLabel 4360 3280 2    60   Input ~ 0
+SCLK
+Text GLabel 3110 6795 2    60   Input ~ 0
+SCLK
+NoConn ~ 2015 6795
+NoConn ~ 2515 6895
+Text GLabel 4355 3480 2    60   Input ~ 0
+DATAIN
+Text GLabel 2825 6995 2    60   Input ~ 0
+DATAIN
+Text Notes 1805 6165 0    60   ~ 12
+RF7021se Connector\nUNIT 1
+$Comp
+L RF7021SE P2
+U 1 1 5A3DFACD
+P 5195 6840
+F 0 "P2" H 5195 7240 50  0000 C CNN
+F 1 "RF7021SE" V 5195 6840 50  0000 C CNN
+F 2 "EA:RF7021se" H 5185 6410 50  0000 C CNN
+F 3 "" H 5195 5640 50  0000 C CNN
+	1    5195 6840
+	1    0    0    -1  
+$EndComp
+Text GLabel 4375 6540 0    60   Input ~ 0
++3.3Vs
+Text GLabel 4675 6640 0    60   Input ~ 0
+CE
+Text GLabel 4375 6740 0    60   Input ~ 0
+SDATA
+Text GLabel 4490 6940 0    60   Input ~ 0
+DATA2
+Text GLabel 4800 7140 0    60   Input ~ 0
+GND
+Text GLabel 5490 6640 2    60   Input ~ 0
+SLE2
+Text GLabel 5855 6700 2    60   Input ~ 0
+SREAD
+Text GLabel 6040 6840 2    60   Input ~ 0
+SCLK
+NoConn ~ 4945 6840
+NoConn ~ 5445 6940
+Text Notes 4735 6210 0    60   ~ 12
+RF7021se Connector\nUNIT 2
+Text GLabel 2905 3580 0    60   Input ~ 0
+SLE2
+Text GLabel 2900 3455 0    60   Input ~ 0
+DCLK2
+Text GLabel 5905 7040 2    60   Input ~ 0
+DCLK2
+NoConn ~ 5445 6540
+Text GLabel 2900 3335 0    60   Input ~ 0
+DATA2
+NoConn ~ 4945 7040
+Text Notes 9470 5035 0    60   ~ 12
+Voltage Regulator
+Text Notes 2865 1420 0    118  ~ 24
+ZUM Radio STM32F103\nDuplex version
+$Comp
+L R_Small R4
+U 1 1 5A3E34DF
+P 5590 7040
+F 0 "R4" V 5515 6990 50  0000 L CNN
+F 1 "47" V 5590 7010 28  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 5590 7040 50  0001 C CNN
+F 3 "" H 5590 7040 50  0000 C CNN
+	1    5590 7040
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R3
+U 1 1 5A3E376D
+P 4640 6940
+F 0 "R3" V 4565 6890 50  0000 L CNN
+F 1 "47" V 4640 6910 28  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 4640 6940 50  0001 C CNN
+F 3 "" H 4640 6940 50  0000 C CNN
+	1    4640 6940
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R2
+U 1 1 5A3E3D50
+P 2660 6995
+F 0 "R2" V 2585 6945 50  0000 L CNN
+F 1 "47" V 2660 6965 28  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 2660 6995 50  0001 C CNN
+F 3 "" H 2660 6995 50  0000 C CNN
+	1    2660 6995
+	0    1    1    0   
+$EndComp
+$Comp
+L R_Small R1
+U 1 1 5A3E44B9
+P 1570 6895
+F 0 "R1" V 1495 6845 50  0000 L CNN
+F 1 "47" V 1570 6865 28  0000 L CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" H 1570 6895 50  0001 C CNN
+F 3 "" H 1570 6895 50  0000 C CNN
+	1    1570 6895
+	0    1    1    0   
+$EndComp
+$Comp
+L CONN_01X04 P3
+U 1 1 5A3E4ADC
+P 7455 5855
+F 0 "P3" H 7455 6105 50  0000 C CNN
+F 1 "SerialLCD" V 7555 5855 50  0000 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_1x04_Pitch2.54mm" H 7455 5855 50  0001 C CNN
+F 3 "" H 7455 5855 50  0000 C CNN
+	1    7455 5855
+	-1   0    0    1   
+$EndComp
+Text GLabel 4390 2580 2    60   Input ~ 0
+3v
+Text GLabel 3220 4280 0    60   Input ~ 0
+3v
+Text GLabel 7945 5705 2    60   Input ~ 0
+3v
+Text GLabel 7710 5805 2    60   Input ~ 0
+GND
+Text GLabel 2905 3040 0    60   Input ~ 0
+DISP_TxD
+Text GLabel 7945 5905 2    60   Input ~ 0
+DISP_TxD
+Text GLabel 7790 6035 2    60   Input ~ 0
+DISP_RxD
+Text GLabel 2905 3170 0    60   Input ~ 0
+DISP_RxD
+Wire Wire Line
+	2770 4380 3265 4380
+Wire Wire Line
+	2885 4380 2885 4500
+Wire Wire Line
+	3265 4480 2885 4480
+Connection ~ 2885 4480
+Connection ~ 2885 4380
+Wire Wire Line
+	4315 2680 4665 2680
+Wire Wire Line
+	8460 1525 8815 1525
+Wire Wire Line
+	9015 1525 9380 1525
+Wire Wire Line
+	9580 1525 10030 1525
+Wire Wire Line
+	8460 1980 8815 1980
+Wire Wire Line
+	9015 1980 9380 1980
+Wire Wire Line
+	9580 1980 10030 1980
+Wire Wire Line
+	8460 2445 8815 2445
+Wire Wire Line
+	9015 2445 9380 2445
+Wire Wire Line
+	9580 2445 10030 2445
+Wire Wire Line
+	8460 2900 8815 2900
+Wire Wire Line
+	9015 2900 9380 2900
+Wire Wire Line
+	9580 2900 10030 2900
+Wire Wire Line
+	8470 3580 8825 3580
+Wire Wire Line
+	9025 3580 9390 3580
+Wire Wire Line
+	9590 3580 10040 3580
+Wire Wire Line
+	8470 4035 8825 4035
+Wire Wire Line
+	9025 4035 9390 4035
+Wire Wire Line
+	9590 4035 10040 4035
+Wire Wire Line
+	4315 4380 4645 4380
+Wire Wire Line
+	3265 3880 2925 3880
+Wire Wire Line
+	4645 4500 4480 4500
+Wire Wire Line
+	4480 4500 4480 4480
+Wire Wire Line
+	4480 4480 4315 4480
+Wire Wire Line
+	2925 3760 3085 3760
+Wire Wire Line
+	3085 3760 3085 3780
+Wire Wire Line
+	3085 3780 3265 3780
+Wire Wire Line
+	4645 4265 4535 4265
+Wire Wire Line
+	4535 4265 4535 4280
+Wire Wire Line
+	4535 4280 4315 4280
+Wire Wire Line
+	4645 4145 4550 4145
+Wire Wire Line
+	4550 4145 4550 4180
+Wire Wire Line
+	4550 4180 4315 4180
+Wire Notes Line
+	7485 475  7485 4600
+Wire Notes Line
+	7485 4600 11225 4600
+Wire Wire Line
+	4315 2780 4345 2780
+Wire Wire Line
+	9120 5485 9325 5485
+Wire Wire Line
+	9725 5785 9725 5880
+Wire Wire Line
+	9725 5880 9775 5880
+Wire Wire Line
+	10125 5485 10605 5485
+Wire Wire Line
+	10220 5655 10220 5485
+Connection ~ 10220 5485
+Wire Wire Line
+	10465 5655 10465 5485
+Connection ~ 10465 5485
+Wire Wire Line
+	10220 5855 10220 5910
+Wire Wire Line
+	10220 5910 10465 5910
+Wire Wire Line
+	10465 5910 10465 5855
+Wire Wire Line
+	10445 5995 10340 5995
+Wire Wire Line
+	10340 5995 10340 5910
+Connection ~ 10340 5910
+Wire Wire Line
+	1445 6495 2015 6495
+Wire Wire Line
+	2715 2780 3265 2780
+Wire Wire Line
+	1745 6595 2015 6595
+Wire Wire Line
+	4315 3180 4700 3180
+Wire Wire Line
+	2015 6695 1445 6695
+Wire Wire Line
+	4700 3380 4315 3380
+Wire Wire Line
+	1670 6895 2015 6895
+Wire Wire Line
+	4315 3580 4695 3580
+Wire Wire Line
+	1410 6995 2015 6995
+Wire Wire Line
+	1870 7095 2015 7095
+Wire Wire Line
+	4645 4630 4600 4630
+Wire Wire Line
+	4600 4630 4600 4265
+Connection ~ 4600 4265
+Wire Wire Line
+	2515 6495 2780 6495
+Wire Wire Line
+	4315 2980 4700 2980
+Wire Wire Line
+	2515 6595 2560 6595
+Wire Wire Line
+	4315 3080 4355 3080
+Wire Wire Line
+	2515 6695 2780 6695
+Wire Wire Line
+	4315 3280 4360 3280
+Wire Wire Line
+	3110 6795 2515 6795
+Wire Wire Line
+	2515 7095 2630 7095
+Wire Wire Line
+	2630 7095 2630 7320
+Wire Wire Line
+	2630 7320 1945 7320
+Wire Wire Line
+	1945 7320 1945 7095
+Connection ~ 1945 7095
+Wire Wire Line
+	4315 3480 4355 3480
+Wire Wire Line
+	2515 6995 2560 6995
+Wire Wire Line
+	4375 6540 4945 6540
+Wire Wire Line
+	4675 6640 4945 6640
+Wire Wire Line
+	4945 6740 4375 6740
+Wire Wire Line
+	4800 7140 4945 7140
+Wire Wire Line
+	5445 6640 5490 6640
+Wire Wire Line
+	5445 6740 5815 6740
+Wire Wire Line
+	6040 6840 5445 6840
+Wire Wire Line
+	5445 7140 5560 7140
+Wire Wire Line
+	5560 7140 5560 7365
+Wire Wire Line
+	5560 7365 4875 7365
+Wire Wire Line
+	4875 7365 4875 7140
+Connection ~ 4875 7140
+Wire Wire Line
+	5445 7040 5490 7040
+Wire Wire Line
+	2905 3580 3265 3580
+Wire Wire Line
+	5855 6700 5815 6700
+Wire Wire Line
+	5815 6700 5815 6740
+Wire Wire Line
+	2900 3455 3125 3455
+Wire Wire Line
+	3125 3455 3125 3480
+Wire Wire Line
+	3125 3480 3265 3480
+Wire Wire Line
+	2900 3335 3060 3335
+Wire Wire Line
+	3060 3335 3060 3380
+Wire Wire Line
+	3060 3380 3265 3380
+Wire Notes Line
+	6965 4595 6965 6535
+Wire Notes Line
+	6965 5495 485  5495
+Wire Notes Line
+	6965 4595 7485 4595
+Wire Wire Line
+	5690 7040 5905 7040
+Wire Wire Line
+	4945 6940 4740 6940
+Wire Wire Line
+	4490 6940 4540 6940
+Wire Wire Line
+	2760 6995 2825 6995
+Wire Wire Line
+	1405 6850 1470 6850
+Wire Wire Line
+	1470 6850 1470 6895
+Wire Wire Line
+	4315 2580 4390 2580
+Wire Wire Line
+	3220 4280 3265 4280
+Wire Wire Line
+	2905 3040 3075 3040
+Wire Wire Line
+	3075 3040 3075 3180
+Wire Wire Line
+	3075 3180 3265 3180
+Wire Wire Line
+	2905 3170 3010 3170
+Wire Wire Line
+	3010 3170 3010 3280
+Wire Wire Line
+	3010 3280 3265 3280
+Wire Wire Line
+	7655 5705 7945 5705
+Wire Wire Line
+	7655 5805 7710 5805
+Wire Wire Line
+	7655 5905 7945 5905
+Wire Wire Line
+	7655 6005 7695 6005
+Wire Wire Line
+	7695 6005 7695 6035
+Wire Wire Line
+	7695 6035 7790 6035
+Wire Notes Line
+	8625 4595 8625 6530
+Text Notes 7555 5190 0    60   ~ 12
+LCD Display\nconnector
+$EndSCHEMATC
